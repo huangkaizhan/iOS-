@@ -36,4 +36,6 @@ static NSString *key_Photo = @"key_Photo";
 @property(nonatomic,,assign,getter=isSelected) BOOL selected;
 ```
 
+7. 
+
 ###控件命名
