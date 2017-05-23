@@ -1,3 +1,3 @@
-# My Awesome Book
+# 项目规范
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+iOS项目代码规范，需严格遵守
