@@ -102,5 +102,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
   * Notify_ + 模块 + 动作（不是功能） + 其他
 ```objc
 // 正例, 切换宝宝
+#define Notify_Baby_Switch                  @"Notify_Baby_Switch" 
+// 反例, 切换宝宝
 #define Notify_Switch_Baby                  @"Notify_Switch_Baby" 
 ```
