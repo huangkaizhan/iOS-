@@ -45,3 +45,4 @@ static NSString *key_Photo = @"key_Photo";
 // 背景
 @property(nonatomic,weak) UIView backView;
 ```
+2. 
