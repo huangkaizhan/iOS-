@@ -94,3 +94,13 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 ```
 11. 其他 ： 跟上面类似，一般以控件名结尾
 
+
+###通知
+1. 通知名
+  * 首字母大写
+  * 单词以_分开
+  * Notify_ + 模块 + 动作（不是功能） + 其他
+```objc
+// 正例
+#define Notify_Switch_Baby                  @"Notify_Switch_Baby" 
+```
