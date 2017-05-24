@@ -40,4 +40,8 @@ static NSString *key_Photo = @"key_Photo";
 
 ###控件命名（统一强制）
 
-1. View ： 
+1. View ： View结尾
+```objc
+// 背景
+@property(nonatomic,weak) UIView backView;
+```
