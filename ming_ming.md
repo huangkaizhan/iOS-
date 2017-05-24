@@ -236,7 +236,7 @@ typedef enum {
 4. 其他，看根据自己雪球目的定义，无需强制
 
 
-###继承
+###继承命名
 1. 父类需要加base，加在哪里，具体看情况
 ```objc
 // base加在中间是为了更明显的敲出来，提示
@@ -259,4 +259,19 @@ typedef enum {
 {
      // 子类必须重写
 }
+```
+
+
+###代理命名
+1. 代理以delegate后缀结尾，数据源以dataSource后缀结尾，其他视情况而定
+1. 要求写全，最好的例子是UITableView代理
+2. 默认为强制实现，如果可以不实现，需要加@optional
+```objc
+@protocol UITableViewDataSource<NSObject>
+// 默认强制写
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+// 可选要关键字标明
+@optional
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+@end
 ```
