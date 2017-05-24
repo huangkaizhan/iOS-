@@ -187,7 +187,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 评论数组,每一个元素都是BBRecordCommentModel类型
 @property (nonatomic, strong) JSON_bb NSMutableArray <BBRecordCommentModel *>*comments;
 ```
-7. 代码块属性，以block结尾
+7. 代码块属性，以Block结尾
 ```objc
 // 预览代码块
 @property (nonatomic, copy) BlockWithTwoObject_bb previewBlock;
