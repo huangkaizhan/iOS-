@@ -87,3 +87,8 @@ BBFirstTimeListCell *cell = [[BBFirstTimeListCell alloc] init];
 // 自定义cell
 BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 ```
+10. 滚动 ： 以ScrollView结尾，注，如果有特殊情况，那么可以命名为scrollView
+```objc
+// 轮播滚动视图
+@property(nonatomic, strong) UIScrollView *bannerScrollView;
+```
