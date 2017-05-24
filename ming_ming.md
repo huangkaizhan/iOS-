@@ -142,3 +142,16 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 
 
 ###控制器命名
+1. 前缀BB + 功能名称 + Controller
+   * BBLoginController -> UIViewConroller (BB + Login + Conroller)
+   * BBBuyWebController -> 非买不可网页控制器
+   * BBTabController -> tabbar控制器
+   * BBNavController -> nav控制器
+   
+2. 如果是基类,则加上前缀换成BBBase, 功能看需要添加
+   * BBBaseWebConroller -> web控制器基类
+   * BBBaseTableController -> 列表基类
+   * BBBaseCollectionController -> 集合流基类
+
+3. 如果功能名太长，可取单词首字母
+  * BBPhotoGalleryListController -> BBPGListController  -> 小影记列表控制器
