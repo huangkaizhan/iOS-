@@ -187,3 +187,40 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 评论数组,每一个元素都是BBRecordCommentModel类型
 @property (nonatomic, strong) JSON_bb NSMutableArray <BBRecordCommentModel *>*comments;
 ```
+
+
+###枚举命名
+1. 统一使用typedef enum关键字，枚举元素必须要用枚举名称开头
+2. 没有特殊需求，默认从0开始
+```objc
+// 正例 ：性别
+typedef enum {
+    SexTypeUnknow, // 未知
+    SexTypeMan,    // 男人
+    SexTypeWoman,  // 女人
+}SexType_bb;
+// 反例 ：出生类型
+typedef enum {
+    BabyTypeUnBorn = 2,     // 未出生
+    BabyTypeBorn = 1,       // 一出生
+}BabyType_bb;
+```
+
+###宏定义
+1. 遵守首字母大写，下划线区分单词的标准，除非特殊
+```objc
+// 反例 ：删除成长发育
+#define Notify_deleteGrowUp                @"Notify_deleteGrowUp"
+// 正例 ：删除成长发育
+#define Notify_GrowUp_Delete               @"Notify_GrowUp_Delete"
+// 正例 ：默认分割线颜色
+#define Color_Default_SepLine              RGB(167.0, 160.0, 157.0)
+// 正例 ：取色值相关的方法（特殊）
+#define RGB_bb(r,g,b)                      [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:1.f]
+```
+
+2. 密匙定义：以Key_开头
+```objc
+// 正例 ：跳转本app url schemes
+#define Key_App_Url_Schemes                         @"rdf200a0c37c3c3d53"
+```
