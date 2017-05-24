@@ -101,6 +101,6 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
   * 单词以_分开
   * Notify_ + 模块 + 动作（不是功能） + 其他
 ```objc
-// 正例
+// 正例, 切换宝宝
 #define Notify_Switch_Baby                  @"Notify_Switch_Baby" 
 ```
