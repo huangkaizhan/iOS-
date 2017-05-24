@@ -29,13 +29,6 @@ static NSInteger Max_Count = 100;
 static NSString *key_Photo = @"key_Photo";
 ```
 
-6. 【强制】bool值属性命名要以面向对象思想为标准
-```objc
-// 是否选中
-// 获取用is来获取，设置直接设置，符合面向对象思想
-@property(nonatomic,,assign,getter=isSelected) BOOL selected;
-```
-
 
 
 
@@ -158,3 +151,39 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 4. 如果是列表控制器，需要带table或者col
   * BBHomeListTableController -> 首页列表控制器
   * BBHomeListColController -> 首页列表流控制器
+
+
+###属性命名
+1. 基本属性命名，对齐
+```objc
+// 总数
+@property (nonatomic, assign) NSInteger allCount;
+// 跳舞
+@property (nonatomic, strong) UIButton *danceButton;
+```
+2. 布局命名 ：后缀需要加上Layout（强制）
+```objc
+// 点赞按钮左边约束
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *likeButtonLeftLayout;
+```
+3. bool值命名 ：以面向对象思想为标准
+```objc
+// 是否选中
+// 获取用is来获取，设置直接设置，符合面向对象思想
+@property (nonatomic, assign, getter=isSelected) BOOL selected;
+```
+4. 接口返回的JSON数据，模型里属性命名最好加JSON空宏，证明是接口返回
+```objc
+// 头像
+@property (nonatomic, copy) JSON_bb NSString *avatar;
+```
+5. KVO接听的属性，最好加上KVO空宏
+```objc
+// 相册是否加载成功
+@property (nonatomic, assign, getter=isAlbumLoaded) KVO_bb BOOL albumLoaded;
+```
+6. 模型数组，最好指定数组元素类型
+```objc
+// 评论数组,每一个元素都是BBRecordCommentModel类型
+@property (nonatomic, strong) JSON_bb NSMutableArray <BBRecordCommentModel *>*comments;
+```
