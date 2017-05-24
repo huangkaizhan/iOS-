@@ -77,3 +77,13 @@ static NSString *key_Photo = @"key_Photo";
 // 集合列表
 @property(nonatomic, strong) UICollectionView *collectionView;
 ```
+8. 列表单元格 ：以Cell结尾
+```objc
+// 自定义cell
+BBFirstTimeListCell *cell = [[BBFirstTimeListCell alloc] init];
+```
+9. 集合列表单元格 ：以ColCell结尾
+```objc
+// 自定义cell
+BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
+```
