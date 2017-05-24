@@ -57,12 +57,23 @@ static NSString *key_Photo = @"key_Photo";
 ```
 4. 按钮 ： Button结尾, 不要缩略为btn
 ```objc
-// 跳舞
+// 正例 ：跳舞
 @property(nonatomic, strong) UIButton *danceButton;
+// 反例 ：唱歌
+@property(nonatomic, strong) UIButton *singBtn;
 ```
 5. 输入框 ：TextField结尾
 ```objc
 // 密码输入框
 @property(nonatomic, strong) UITextField *passwordTextField;
 ```
-6. 其他 ： 跟上面一致，都是以控件结尾
+6. 列表 ： TableView结尾，注，如果一个页面只有一个列表，那么可以命名为tableView
+```objc
+// 列表
+@property(nonatomic, strong) UITableView *tableView;
+```
+7. 集合列表 ： CollectionView结尾，注，如果一个页面只有一个列表，那么可以命名为collectionView
+```objc
+// 集合列表
+@property(nonatomic, strong) UICollectionView *collectionView;
+```
