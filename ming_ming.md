@@ -95,6 +95,8 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 11. 其他 ： 跟上面类似，一般以控件名结尾
 
 
+
+
 ###通知
 1. 通知名
   * 首字母大写
@@ -116,6 +118,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshHomeBabyInfo) name:Notify_Baby_Switch object:nil];
 // 正例 ： 明确告诉这是通知，里面想做什么事自己处理
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifyBabySwitch:) name:Notify_Baby_Switch object:nil];
+// 正例
 -(void)notifyBabySwitch:(NSNotification *)notify
 {
         // 刷新宝宝详情
@@ -135,3 +138,6 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
         [self.tableView setContentOffset:CGPointMake(0,0) animated:NO];
 }
 ```
+
+
+###控制器
