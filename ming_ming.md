@@ -55,3 +55,8 @@ static NSString *key_Photo = @"key_Photo";
 // 姓名
 @property(nonatomic, weak) UILabel *nameLabel;
 ```
+4. 按钮 ： Button结尾, 不要缩略为btn
+```objc
+// 跳舞
+@property(nonatomic, strong) UIButton *danceButton;
+```
