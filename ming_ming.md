@@ -45,4 +45,9 @@ static NSString *key_Photo = @"key_Photo";
 // 背景
 @property(nonatomic,weak) UIView backView;
 ```
-2. 
+2. 图片 ： imageView结尾
+```objc
+// 头像
+@property(nonatomic,weak) UIView avatarImageView;
+```
+3. 
