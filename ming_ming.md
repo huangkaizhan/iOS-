@@ -43,11 +43,15 @@ static NSString *key_Photo = @"key_Photo";
 1. View ： View结尾
 ```objc
 // 背景
-@property(nonatomic,weak) UIView backView;
+@property(nonatomic, weak) UIView *backView;
 ```
-2. 图片 ： imageView结尾
+2. 图片 ： ImageView结尾
 ```objc
 // 头像
-@property(nonatomic,weak) UIView avatarImageView;
+@property(nonatomic, weak) UIView *avatarImageView;
 ```
-3. 
+3. 文字 ： Label结尾
+```objc
+// 姓名
+@property(nonatomic, weak) UILabel *nameLabel;
+```
