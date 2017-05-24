@@ -155,3 +155,6 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 
 3. 如果功能名太长，可取单词首字母
   * BBPhotoGalleryListController -> BBPGListController  -> 小影记列表控制器
+4. 如果是列表控制器，需要带table或者col
+  * BBHomeListTableController -> 首页列表控制器
+  * BBHomeListColController -> 首页列表流控制器
