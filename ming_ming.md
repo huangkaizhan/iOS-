@@ -60,3 +60,9 @@ static NSString *key_Photo = @"key_Photo";
 // 跳舞
 @property(nonatomic, strong) UIButton *danceButton;
 ```
+5. 输入框 ：TextField结尾
+```objc
+// 密码输入框
+@property(nonatomic, strong) UITextField *passwordTextField;
+```
+6. 其他 ： 跟上面一致，都是以控件结尾
