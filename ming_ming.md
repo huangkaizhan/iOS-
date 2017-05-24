@@ -38,4 +38,6 @@ static NSString *key_Photo = @"key_Photo";
 
 7. 
 
-###控件命名
+###控件命名（统一强制）
+
+1. View ： 
