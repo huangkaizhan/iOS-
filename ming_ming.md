@@ -222,5 +222,41 @@ typedef enum {
 2. 密匙定义：以Key_开头
 ```objc
 // 正例 ：跳转本app url schemes
-#define Key_App_Url_Schemes                         @"rdf200a0c37c3c3d53"
+#define Key_App_Url_Schemes                @"rdf200a0c37c3c3d53"
+// 反例 ：修改宝宝名字Key，NameKey ? 写的是什么鬼
+#define NameKey                            @"NameKey"
+```
+
+3. 友盟，全体大写，以BB__EVENT_开头
+```objc
+//分享到QQ空间
+#define BB_EVENT_SHARE_QZONE               @"share_qzone"
+```
+
+4. 其他，看根据自己雪球目的定义，无需强制
+
+
+###继承
+1. 父类需要加base，加在哪里，具体看情况
+```objc
+// base加在中间是为了更明显的敲出来，提示
+// 父头像
+@property(nonatomic, weak) BBAvatarBaseImageView *avatarBaseImageView;
+// 子头像
+@property(nonatomic, weak) BBAvatarImageView *avatarImageView;
+```
+
+2. 方法名，也需要加base区分，如果需要强制重写，那么需要再加override
+ ```objc
+// 正例 ：布局基本UI
+-(void)prepareBaseUI
+{
+     // 布局头部视图
+     [self prepareOverrideBaseHeaderView];
+}
+// 正例
+-(void)prepareOverrideBaseHeaderView
+{
+     // 子类必须重写
+}
 ```
