@@ -36,7 +36,8 @@ static NSString *key_Photo = @"key_Photo";
 @property(nonatomic,,assign,getter=isSelected) BOOL selected;
 ```
 
-7. 
+
+
 
 ###控件命名（统一强制）
 
@@ -97,7 +98,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 
 
 
-###通知
+###通知命名
 1. 通知名
   * 首字母大写
   * 单词以_分开
@@ -140,4 +141,4 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 ```
 
 
-###控制器
+###控制器命名
