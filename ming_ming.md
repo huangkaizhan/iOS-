@@ -105,4 +105,33 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 #define Notify_Baby_Switch                  @"Notify_Baby_Switch" 
 // 反例, 切换宝宝
 #define Notify_Switch_Baby                  @"Notify_Switch_Baby" 
+// 反例，日历隐藏显示通知
+#define Notify_showCalendar                 @"Notify_showCalendar"
+```
+2. 接收通知方法名
+  * notify开头，注意是小写
+  * 最好以通知名延续下来，别写要做的功能名
+```objc
+// 反例 ： 老子切换宝宝通知你，你直接刷新宝宝数据，万一后面还要处理缓存等等操作，这样就不符合单一原则了
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshHomeBabyInfo) name:Notify_Baby_Switch object:nil];
+// 正例 ： 明确告诉这是通知，里面想做什么事自己处理
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifyBabySwitch:) name:Notify_Baby_Switch object:nil];
+-(void)notifyBabySwitch:(NSNotification *)notify
+{
+        // 刷新宝宝详情
+        // 缓存处理
+        // 滚动
+}
+// 做了什么鬼东西，不好
+-(void)refreshHomeBabyInfo
+{
+        [self resetUploadViewStatus];
+        [self getGeneralize];
+        [self loadBabyDetailData];
+        [self.dataArray removeAllObjects];
+        [self.tableView reloadData];
+        [self loadHomeDataBase:@""];
+        // 回滚第一条
+        [self.tableView setContentOffset:CGPointMake(0,0) animated:NO];
+}
 ```
