@@ -92,3 +92,4 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 轮播滚动视图
 @property(nonatomic, strong) UIScrollView *bannerScrollView;
 ```
+11. 其他 ： 跟上面类似，一般以控件名结尾
