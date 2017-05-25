@@ -192,6 +192,8 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 预览代码块
 @property (nonatomic, copy) BlockWithTwoObject_bb previewBlock;
 ```
+8. 数组命名，以array结尾，可变以marray结尾
+9. 字典命名，以dict结尾，可变以mdict结尾
 
 
 ###枚举命名
