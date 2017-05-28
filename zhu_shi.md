@@ -1,7 +1,7 @@
 # 注释
 
-###快捷注释
-    Xcode 默认快捷注释快捷键为 ： command + shift + /
+###文档注释，有提示，可提高阅读效率
+    Xcode 默认文档注释快捷键为 ： command + shift + /
     
 1. 类 ：直接在类名使用注释
 ```objc
@@ -12,3 +12,57 @@
 @end
 ```
 效果图 ： 
+![](类名注释.png)
+
+2. .h文件里属性
+3. 
+![](h属性注释.png)
+
+3. .h文件里方法 (注意，-和void要有空格，这里格式不支持)
+```objc
+/**
+ 创建人
+ @param name 人名
+ */
+-(void)createPerpleWithName:(NSString *)name;
+```
+
+###快捷注释 : //
+    Xcode 默认快捷键为 ： command + /
+    
+1. .m 文件中的属性
+```objc
+// 姓名
+@property (nonatomic, copy) NSString *name;
+```
+2. .m 文件中的方法
+```objc
+// 说你好
+-(void)sayHello
+{
+      // 获取名字
+      NSString *name = self.name;
+      NSLog(@"你好！%@", name);
+}
+```
+
+###类创建
+    【强制】所有的类都必须添加创建者和创建日期。
+    
+```objc
+//
+//  BBGod.h
+//  ###（项目名）
+//
+//  Created by huangkaizhan on 2017/5/28.
+//  Copyright © 2017年 mama.cn. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+/**
+ 上帝类 ： 负责造人
+ */
+@interface BBGod : NSObject
+```
