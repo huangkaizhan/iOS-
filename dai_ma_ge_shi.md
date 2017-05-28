@@ -101,3 +101,13 @@ NSDictionary *dict = @{@"name" : @"KK", @"height" : @"185"};
 NSArray *array = @[@"1", @"2", @"3"];
 NSMutableArray *arrayM = [NSMutableArray arrayWithObjects:@"1", @"2", @"3", nil];
 ```
+6. 方法，标识符（-\+）和返回值有空格，调用不空格
+```objc
+// 调用传参不空格
+[self sayWord:@"" toPeople:@"name"];
+// 注意：这里的-和返回值是有空格的，这里格式不支持
+-(void)sayWord:(NSString *)word toPeople:(NSString *)name
+{
+        NSLog(@"说唱");
+}
+```
