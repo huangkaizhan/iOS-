@@ -118,4 +118,10 @@ UIView *view = [[UIView alloc]init];
 // =号后没空格
 UIView *view1 =[[UIView alloc] init];
 ```
-
+7. 多个空格，请用tab健对齐
+```objc
+// 添加记录成功
+#define Notify_Record_Add_Successed                 @"Notify_Record_Add_Successed"
+// 添加记录失败
+#define Notify_Record_Add_Failed                    @"Notify_Record_Add_Failed"
+```
