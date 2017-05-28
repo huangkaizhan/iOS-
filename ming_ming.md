@@ -199,13 +199,14 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 ###枚举命名
 1. 统一使用typedef enum关键字，枚举元素必须要用枚举名称开头
 2. 没有特殊需求，默认从0开始
+3. 如果怕跟第三方库冲突，可以加后缀区分
 ```objc
 // 正例 ：性别
 typedef enum {
     SexTypeUnknow, // 未知
     SexTypeMan,    // 男人
     SexTypeWoman,  // 女人
-}SexType_bb;
+}SexType_bb; // 加了_bb区分，bb为项目统一前缀、后缀
 // 反例 ：出生类型
 typedef enum {
     BabyTypeUnBorn = 2,     // 未出生
