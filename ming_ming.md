@@ -28,7 +28,14 @@ static NSInteger Max_Count = 100;
 // 反例
 static NSString *key_Photo = @"key_Photo";
 ```
-
+6. 强类型变量，*号统一加载变量名前面，禁止不换行
+ ```objc
+// 正例
+NSString *content = @"铲屎君";
+// 反例
+NSString*title = @"养猫";
+NSString* text = @"不养了";
+```
 
 
 
