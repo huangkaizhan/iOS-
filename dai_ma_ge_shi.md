@@ -45,13 +45,13 @@ NSDictionary *dict2 = @{  @"name" : @"黄凯展",
                              @"sb" : @(0),
                              @"height" : @"185"};
 ```
-4. switch, 大括号遵循
+4. switch, 大括号遵循规则
 ```objc
 NSInteger age = 18;
-    switch (age) {
-        case 18:{
+    switch (age) { // 不换行
+        case 18:{ // 不换行
             NSInteger num = 10;
-        }
+        } // 独占一行
             break;
         case 20:
             NSLog(@"your sister");
