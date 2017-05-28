@@ -74,3 +74,10 @@ typedef enum {
     SexTypeWoman,   // 女人
 }SexType_bb;
 ```
+
+###标记注释
+1. mark有助于快速查询，个人觉得按功能分，不需要每个方法都分，没必要的也可不分
+```objc
+// 标准格式， mark后空格-空格注释
+#pragma mark - 这是一个注释
+```
