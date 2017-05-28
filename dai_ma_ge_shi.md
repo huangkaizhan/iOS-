@@ -101,7 +101,7 @@ NSDictionary *dict = @{@"name" : @"KK", @"height" : @"185"};
 NSArray *array = @[@"1", @"2", @"3"];
 NSMutableArray *arrayM = [NSMutableArray arrayWithObjects:@"1", @"2", @"3", nil];
 ```
-6. 方法，标识符（-\+）和返回值有空格，调用不空格
+6. 方法，标识符（-\+）和返回值有空格，传参不空格，调用方法需要空格
 ```objc
 // 调用传参不空格
 [self sayWord:@"" toPeople:@"name"];
@@ -110,4 +110,11 @@ NSMutableArray *arrayM = [NSMutableArray arrayWithObjects:@"1", @"2", @"3", nil]
 {
         NSLog(@"说唱");
 }
+// 正例
+UIView *view = [[UIView alloc] init];
+// 反例
+// 调用方法没空格
+UIView *view = [[UIView alloc]init];
+// =号后没空格
+UIView *view1 =[[UIView alloc] init];
 ```
