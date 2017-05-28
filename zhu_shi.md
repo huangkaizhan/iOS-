@@ -46,9 +46,7 @@
 }
 ```
 
-###类创建
-    【强制】所有的类都必须添加创建者和创建日期。
-    
+###类创建 ：【强制】所有的类都必须添加创建者和创建日期。
 ```objc
 //
 //  BBGod.h
@@ -65,4 +63,14 @@
  上帝类 ： 负责造人
  */
 @interface BBGod : NSObject
+```
+
+###枚举 ：所有的枚举类型字段必须要有注释，说明每个数据项的用途。
+```objc
+// 性别
+typedef enum {
+    SexTypeUnknow,  // 未知
+    SexTypeMan,     // 男人
+    SexTypeWoman,   // 女人
+}SexType_bb;
 ```
