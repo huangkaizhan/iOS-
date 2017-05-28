@@ -45,10 +45,10 @@ NSDictionary *dict2 = @{  @"name" : @"黄凯展",
                              @"sb" : @(0),
                              @"height" : @"185"};
 ```
-4. switch, 大括号遵循规则
+4. switch, while等等的大括号遵循规则
 ```objc
 NSInteger age = 18;
-    switch (age) { // 不换行
+   switch (age) { // 不换行
         case 18:{ // 不换行
             NSInteger num = 10;
         } // 独占一行
@@ -59,5 +59,8 @@ NSInteger age = 18;
         default:
             NSAssert(1 == 2, @"没有满足的条件");
             break;
+    }
+while (age > 10) {
+        age--;
     }
 ```
