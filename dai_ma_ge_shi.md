@@ -38,4 +38,4 @@ NSDictionary *dict2 = @{  @"name" : @"黄凯展",
                              @"sb" : @(0),
                              @"height" : @"185"};
 ```
-
+4. switch
