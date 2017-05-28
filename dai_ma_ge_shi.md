@@ -86,3 +86,9 @@ if (1 == 2) {
        NSLog(@"见鬼了。。。");
    }
 ```
+2. 【强制】if/for/while/switch/do等保留字与括号之间都必须加空格
+3. 【强制】任何二目、三目运算符的左右两边都需要加一个空格。 说明：运算符包括赋值运算符=、逻辑运算符&&、加减乘除符号等
+```objc
+NSString *text = age == 18 ? @"一朵花" : @"一朵花";
+self.view.hidden = self.dataArray.count;
+```
