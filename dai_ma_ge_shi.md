@@ -92,3 +92,12 @@ if (1 == 2) {
 NSString *text = age == 18 ? @"一朵花" : @"一朵花";
 self.view.hidden = self.dataArray.count;
 ```
+4. 字典, 左右大括号不空格，冒号左右空格，逗号后要加空格
+```objc
+NSDictionary *dict = @{@"name" : @"KK", @"height" : @"185"};
+```
+5. 数组, 左右中括号不空格，每一元素逗号空格
+```objc
+NSArray *array = @[@"1", @"2", @"3"];
+NSMutableArray *arrayM = [NSMutableArray arrayWithObjects:@"1", @"2", @"3", nil];
+```
