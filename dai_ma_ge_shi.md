@@ -1,6 +1,13 @@
 # 代码格式
 
 ###大括号
+规则 : 
+* 左大括号前不换行。
+* 左大括号后换行。 
+* 右大括号前换行。 
+* 右大括号后还有else等代码则不换行；表示终止的右大括号后必须换行。
+
+
 1. 方法 ： 左右大括号到独占一行（不管是不是系统方法）
 ```objc
 // 跳舞，由于下面void前面打空格会有问题，所以去掉，真实代码比如加上
@@ -38,4 +45,19 @@ NSDictionary *dict2 = @{  @"name" : @"黄凯展",
                              @"sb" : @(0),
                              @"height" : @"185"};
 ```
-4. switch
+4. switch, 大括号遵循
+```objc
+NSInteger age = 18;
+    switch (age) {
+        case 18:{
+            NSInteger num = 10;
+        }
+            break;
+        case 20:
+            NSLog(@"your sister");
+            break;
+        default:
+            NSAssert(1 == 2, @"没有满足的条件");
+            break;
+    }
+```
