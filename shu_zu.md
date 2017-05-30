@@ -35,4 +35,4 @@ ArrayM_Create(B)\
 // 用法二
 ArrayM_Create_Two(dataArray, _dataArray)
 ```
-3. 效果图对比
+3. 没有对比就没有伤害
