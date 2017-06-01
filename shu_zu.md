@@ -36,3 +36,7 @@ ArrayM_Create(B)\
 ArrayM_Create_Two(dataArray, _dataArray)
 ```
 3. 没有对比就没有伤害
+ ![](数组创建（老）.png)
+ ![](数组创建（宏）.png)
+ 
+###
