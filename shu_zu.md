@@ -8,7 +8,7 @@
 快捷创建NSMutableArray
 用法一 ：在get方法里面直接使用宏ArrayM_Create
 -(NSMutableArray *)array
-{
+{ 
         ArrayM_Create(_array);
 }*/
 #define ArrayM_Create(A)                       if (!A) {\
