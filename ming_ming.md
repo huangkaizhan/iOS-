@@ -279,7 +279,7 @@ typedef enum {
 @property(nonatomic, weak) BBAvatarImageView *avatarImageView;
 ```
 
-2. 方法名，也需要加base区分，如果需要强制重写，那么需要加override前缀
+2. 【强制】方法名，也需要加base区分，如果需要强制重写，那么需要加override前缀
  ```objc
 // 正例 ：布局基本UI
 -(void)prepareBaseUI
@@ -296,7 +296,7 @@ typedef enum {
 
 
 ###代理命名
-1. 代理以delegate后缀结尾，数据源以dataSource后缀结尾，其他视情况而定
+1. 【强制】代理以delegate后缀结尾，数据源以dataSource后缀结尾，其他视情况而定
 1. 要求写全，最好的例子是UITableView代理
 2. 默认为强制实现，如果可以不实现，必须加@optional
 ```objc
