@@ -1,15 +1,31 @@
 # 数组
+
+###命名
+1.  【建议】NSArray使用array后缀
+2.  【建议】NSMutableArray使用arrayM后缀
+3.  【建议】不使用s或短写arr
+4.  【建议】数组元素类型如果一致，建议带上类型标识符
+```objc
+// 反例
+    NSArray *names = @[@"KK", @"JJ"];
+    NSMutableArray *moneyArr = [NSMutableArray arrayWithObjects:@(0), @(100), nil];
+    
+    // 正例
+    NSArray <NSString *>*nameArray = @[@"KK", @"JJ"];
+    NSMutableArray <NSValue *>*moneyArrayM = [NSMutableArray arrayWithObjects:@(0), @(100), nil];
+```
+
 ###懒加载
-    多个数组，有时创建用错了属性名，建议使用宏来懒加载数组，快捷安全
+  多个数组，有时创建用错了属性名，建议使用宏来懒加载数组，快捷安全
     
 1. 宏定义
 ```objc
 /* 
 快捷创建NSMutableArray
 用法一 ：在get方法里面直接使用宏ArrayM_Create
--(NSMutableArray *)array
+-(NSMutableArray *)arrayM
 { 
-        ArrayM_Create(_array);
+        ArrayM_Create(_arrayM);
 }*/
 #define ArrayM_Create(A)                       if (!A) {\
 A = [NSMutableArray array];\
@@ -28,12 +44,12 @@ ArrayM_Create(B)\
 2. 创建
 ```objc
 // 用法一
--(NSMutableArray *)dataArray
+-(NSMutableArray *)dataArrayM
 {
-        ArrayM_Create(_dataArray);
+        ArrayM_Create(_dataArrayM);
 }
 // 用法二
-ArrayM_Create_Two(dataArray, _dataArray)
+ArrayM_Create_Two(dataArrayM, _dataArrayM)
 ```
 3. 没有对比就没有伤害
  ![](数组创建（老）.png)
