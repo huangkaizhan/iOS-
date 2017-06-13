@@ -161,7 +161,10 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 
 ###ViewModel命名
 1. 类统一使用ViewModel后缀
-
+```objc
+@interface BBBabyAddViewModel : BaseViewModel_lib
+@end
+```
 
 ###属性命名
 1. 基本属性命名，对齐
@@ -203,8 +206,8 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 预览代码块
 @property (nonatomic, copy) BlockWithTwoObject_bb previewBlock;
 ```
-8. 数组命名，以array结尾，可变以marray结尾
-9. 字典命名，以dict结尾，可变以mdict结尾
+8. 数组命名，以array结尾，可变以arrayM结尾
+9. 字典命名，以dict结尾，可变以dictM结尾
 
 
 ###枚举命名
