@@ -1,35 +1,5 @@
 # 方法
 
-
-3. 加载分页列表数据，下拉刷新推荐使用requestFirstPageData
-```objc
-// 列表下拉
--(void)pullDown
-{
-        // 加载第一页数据
-        [self requestFirstPageData];
-}
-// 加载第一页数据
--(void)requestFirstPageData
-{
-        // 请求操作
-}
-```
-4. 加载分页列表数据，上拉加载下一页推荐使用requestNextPageData
-```objc
-// 列表上拉
--(void)pullUp
-{
-        // 加载下一页数据
-        [self requestNextPageData];
-}
-// 加载下一页数据
--(void)requestNextPageData
-{
-        // 请求操作
-}
-```
-
 ### UI
 
 1. 初始化UI，建议使用setup前缀或者是prepare前缀，统一
