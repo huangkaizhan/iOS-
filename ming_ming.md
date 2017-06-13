@@ -208,6 +208,12 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 ```
 8. 数组命名，以array结尾，可变以arrayM结尾
 9. 字典命名，以dict结尾，可变以dictM结尾
+```objc
+// 性别数组
+@property (nonatomic, strong) NSArray <NSString *>*sexArray;
+// 明星数组
+@property (nonatomic, strong) NSMutableArray <NSString *>*starArrayM;
+```
 
 
 ###枚举命名
