@@ -285,10 +285,10 @@ typedef enum {
 -(void)prepareBaseUI
 {
      // 布局头部视图
-     [self prepareOverrideBaseHeaderView];
+     [self overridePrepareBaseHeaderView];
 }
 // 正例
--(void)prepareOverrideBaseHeaderView
+-(void)overridePrepareBaseHeaderView
 {
      // 子类必须重写
 }
