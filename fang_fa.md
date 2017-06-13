@@ -37,7 +37,11 @@
         [self refreshData];
 }
 ```
-3. 通知，添加通知使用addNotifications，移除使用removeNotifications，通知方法以notify前缀开头
+###通知
+1. 添加通知使用addNotifications
+2. 移除使用removeNotifications
+3. 通知接收方法以notify前缀开头，有参数，参数名为notify变量
+通知，，，
 ```objc
 // 添加通知
 -(void)addNotifications
