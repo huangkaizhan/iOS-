@@ -3,3 +3,17 @@
 1. 【强制】在一个switch块内，每个case要么通过break/return等来终止，要么注释说明程序将继续执行到哪一个case为止；在一个switch块内，都必须包含一个default语句并且放在最后，即使它什么代码也没有。
 2. 【强制】在if/else/for/while/do语句中必须使用大括号。即使只有一行代码，避免使用单行的形式：if (condition) statements;
 3. 【推荐】表达异常的分支时，少用if-else方式，推荐使用卫语句。卫语句示例如下：
+```objc
+-(void)getGrilFriendWithHeight:(CGFloat)height weight:(CGFloat)weight
+{
+        if (height < 150) {
+            NSLog(@"太矮了");
+            return;
+        }
+        if (weight > 250) {
+            NSLog(@"太重了");
+            return;
+        }
+        NSLog(@"刚刚好");
+}
+```
