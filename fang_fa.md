@@ -63,7 +63,25 @@
 ###数据库
 1. 数据库工具类以SqliteTool结尾命名，不适用CacheTool后缀
 2. 方法采用和sql语句一样的命名方法（增删改查建表）
-
+```objc
+-(void)setupUI
+{
+        // 导航
+        [self setupNavigation];
+        // 头部
+        [self setupHeaderView];
+}
+// 导航
+-(void)setupNavigation
+{
+        self.navigationItem.title = @"标题";
+}
+// 头部
+-(void)setupHeaderView
+{
+        NSLog(@"");
+}
+```
 
 ###其他
 1. 对象初始化，对象方法使用initWith前缀，类方法使用类名前缀
