@@ -26,3 +26,14 @@
         [dictM setObjectSafe:obj forKey:@"obj"];
 }
 ```
+
+###创建
+1. 统一使用分类方法
+```objc
+-(void)testDictionary
+{
+        // 反例
+        // NSDictionary *failedDict = [NSDictionary dictionaryWithObject:nil forKey:@"name"];
+        NSDictionary *dict = [NSDictionary dictionaryWithObjectSafe:nil forKey:@"name"];
+}
+```
