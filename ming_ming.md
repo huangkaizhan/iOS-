@@ -206,8 +206,8 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 预览代码块
 @property (nonatomic, copy) BlockWithTwoObject_bb previewBlock;
 ```
-8. 数组命名，以array结尾，可变以arrayM结尾
-9. 字典命名，以dict结尾，可变以dictM结尾
+8. 【推荐】数组命名，以array结尾，可变以arrayM结尾
+9. 【推荐】字典命名，以dict结尾，可变以dictM结尾
 ```objc
 // 性别数组
 @property (nonatomic, strong) NSArray <NSString *>*sexArray;
