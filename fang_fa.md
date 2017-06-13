@@ -67,6 +67,12 @@
 @interface BBUserSqliteTool : NSObject
 // 新增用户，不使用add
 +(BOOL)insertUser:(id)user;
+// 删除用户
++(BOOL)deleteUserWithUid:(NSString *)uid;
+// 修改用户
++(BOOL)updateUser:(id)user;
+// 查询用户
++(id)selectUserWithUid:(NSString *)uid;
 @end
 ```
 
