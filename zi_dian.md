@@ -10,19 +10,18 @@
     NSMutableDictionary <NSString *, NSString *>*dictM = [NSMutableDictionary dictionary];
 ```
 
-###增（NSMtableArray）
+###增（NSMutableDictionary）
 1. 统一使用分类方法
 ```objc
--(void)testArrayM
+-(void)testDictionary
 {
-        NSMutableArray *arrayM = [NSMutableArray array];
+        NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
         id obj;
-        // 反例 ：obj不能为nil, 下标越界
-    //    [arrayM addObject:obj];
-    //    [arrayM insertObject:obj atIndex:3];
+        // 反例
+        //[dictM setObject:obj forKey:@"name"]; // obj不能为nil
     
-        // 正例 ：使用分类方法
-        [arrayM addObjectSafe:obj];
-        [arrayM insertObjectSafe:obj atIndex:3];
+        // 正例
+        [dictM setObjectSafe:@(45) forKey:@"age"];
+        [dictM setObjectSafe:nil forKey:@"obj"];
 }
 ```
