@@ -214,6 +214,11 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 明星数组
 @property (nonatomic, strong) NSMutableArray <NSString *>*starArrayM;
 ```
+10. ViewModel命名，加VM后缀
+```objc
+// 详情VM
+@property (nonatomic, strong) BBFirstDetailViewModel *detailVM;
+```
 
 
 ###枚举命名
