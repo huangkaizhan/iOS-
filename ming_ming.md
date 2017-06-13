@@ -9,7 +9,7 @@
   * 反例： DaZhePromotion [打折] / getPingfenByName() [评分] / int 某变量 = 3
 
 3. 【强制】类名使用UpperCamelCase风格，必须遵从驼峰形式，特殊情况除外：UMeng(友盟)
-  * 正例： Person / Pig  / UMeng
+  * 正例： Person / Pig  / UMeng / NBA
   * 反例： person / pig  / umeng
  
 4. 【强制】方法名、参数名、成员变量、局部变量都统一使用lowerCamelCase风格，必须遵从驼峰形式。
