@@ -37,11 +37,11 @@
         [self refreshData];
 }
 ```
+
 ###通知
 1. 添加通知使用addNotifications
 2. 移除使用removeNotifications
 3. 通知接收方法以notify前缀开头，有参数，参数名为notify变量
-通知，，，
 ```objc
 // 添加通知
 -(void)addNotifications
@@ -53,8 +53,20 @@
 {
         [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+// 通知方法
+-(void)notifySwitchBaby:(NSNotification *)notify
+{
+        // 操作
+}
 ```
-4. 对象初始化，对象方法使用initWith前缀，类方法使用类名前缀
+
+###数据库
+1. 数据库工具类以CacheTool结尾命名
+2. 方法采用和sql语句一样的命名方法（增删改查建表）,结尾以DB结束
+3. 建表  -> createDB
+
+###其他
+1. 对象初始化，对象方法使用initWith前缀，类方法使用类名前缀
 ```objc
 /**
  根据名称初始化
@@ -79,4 +91,4 @@
  */
 +(instancetype)godWithName:(NSString *)name;
 ```
-5.
+
