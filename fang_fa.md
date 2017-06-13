@@ -104,3 +104,4 @@
 +(instancetype)godWithName:(NSString *)name;
 ```
 2. 【建议】画图，统一使用draw开头
+
