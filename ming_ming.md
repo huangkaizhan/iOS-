@@ -214,7 +214,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 明星数组
 @property (nonatomic, strong) NSMutableArray <NSString *>*starArrayM;
 ```
-10. ViewModel命名，加VM后缀
+10. 【强制】ViewModel命名，加VM后缀
 ```objc
 // 详情VM
 @property (nonatomic, strong) BBFirstDetailViewModel *detailVM;
@@ -222,9 +222,9 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 
 
 ###枚举命名
-1. 统一使用typedef enum关键字，枚举元素必须要用枚举名称开头
-2. 没有特殊需求，默认从0开始
-3. 如果怕跟第三方库冲突，可以加后缀区分
+1. 【强制】统一使用typedef enum关键字，枚举元素必须要用枚举名称开头
+2. 【推荐】没有特殊需求，默认从0开始
+3. 【推荐】如果怕跟第三方库冲突，可以加后缀区分
 ```objc
 // 正例 ：性别
 typedef enum {
@@ -240,7 +240,7 @@ typedef enum {
 ```
 
 ###宏定义
-1. 遵守首字母大写，下划线区分单词的标准，除非特殊
+1. 【强制】遵守首字母大写，下划线区分单词的标准，除非特殊
 ```objc
 // 反例 ：删除成长发育
 #define Notify_deleteGrowUp                @"Notify_deleteGrowUp"
