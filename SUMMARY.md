@@ -8,5 +8,5 @@
 * [注释](zhu_shi.md)
 * [方法](fang_fa.md)
 * [数组](shu_zu.md)
-* 字典
+* [字典](zi_dian.md)
 
