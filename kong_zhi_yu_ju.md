@@ -1,5 +1,7 @@
 # 控制语句
 
+
+#if
 1. 【强制】在if/else/for/while/do语句中必须使用大括号。即使只有一行代码，避免使用单行的形式：if (condition) statements;
 ```objc
 // 反例
@@ -21,9 +23,21 @@ if (age == 18)
         NSLog(@"刚刚好");
 }
 ```
-3. 【推荐】循环体中的语句要考量性能，以下操作尽量移至循环体外处理，如定义对象、变量、获取数据库连接，进行不必要的try-catch操作（这个try-catch是否可以移至循环体外）
-4. 【推荐】接口入参保护，这种场景常见的是用于做批量操作的接口
-
+3. 不用使用字符串做判断，字符串容易出错，而且有些字符串是变动的
+```objc
+-(void)getGrilFriendWithHeight:(CGFloat)height weight:(CGFloat)weight
+{
+        if (height < 150) {
+            NSLog(@"太矮了");
+            return;
+        }
+        if (weight > 250) {
+            NSLog(@"太重了");
+            return;
+        }
+        NSLog(@"刚刚好");
+}
+```
 
 ###Switch
 1. 每个case要么通过break/return等来终止
@@ -48,3 +62,7 @@ SexType_bb type = SexTypeMan;
             break;
     }
 ```
+
+###其他
+1. 【推荐】循环体中的语句要考量性能，以下操作尽量移至循环体外处理，如定义对象、变量、获取数据库连接，进行不必要的try-catch操作（这个try-catch是否可以移至循环体外）
+2. 【推荐】接口入参保护，这种场景常见的是用于做批量操作的接口
