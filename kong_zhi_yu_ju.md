@@ -38,6 +38,18 @@ if (age == 18)
         }
 }
 ```
+4. 判断字符串对象要视情况判断length或字符串本身
+```objc
+NSString *name = @"";
+// 反例
+if (name) {
+      NSLog(@"我叫%@", name); // 你叫个鬼叫
+}
+// 正例
+if (name.length) {
+      NSLog(@"我叫%@", name); // 嗯，我不叫
+ }
+```
 
 ###Switch
 1. 每个case要么通过break/return等来终止
