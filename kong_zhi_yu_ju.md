@@ -25,17 +25,17 @@ if (age == 18)
 ```
 3. 不用使用字符串做判断，字符串容易出错，而且有些字符串是变动的
 ```objc
--(void)getGrilFriendWithHeight:(CGFloat)height weight:(CGFloat)weight
+// 打印球队名称
+-(void)printTeamNameWithNBA:(NSString *)NBA
 {
-        if (height < 150) {
-            NSLog(@"太矮了");
-            return;
+        // 这他妈改名字就尴尬了😓
+        if ([NBA isEqualToString:@"黄蜂队"]) {
+            NSLog(@"黄蜂队");
+        } else if ([NBA isEqualToString:@"骑士队"]) {
+            NSLog(@"骑士队");
+        } else {
+            NSLog(@"无名队");
         }
-        if (weight > 250) {
-            NSLog(@"太重了");
-            return;
-        }
-        NSLog(@"刚刚好");
 }
 ```
 
