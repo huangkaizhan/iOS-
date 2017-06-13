@@ -260,7 +260,7 @@ typedef enum {
 #define NameKey                            @"NameKey"
 ```
 
-3. 友盟，全体大写，以BB__EVENT_开头
+3. 【强制】友盟，全体大写，以BB__EVENT_开头
 ```objc
 //分享到QQ空间
 #define BB_EVENT_SHARE_QZONE               @"share_qzone"
@@ -270,7 +270,7 @@ typedef enum {
 
 
 ###继承命名
-1. 父类需要加base，加在哪里，具体看情况
+1. 【强制】父类需要加base，加在哪里，具体看情况
 ```objc
 // base加在中间是为了更明显的敲出来，提示
 // 父头像
