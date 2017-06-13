@@ -297,7 +297,7 @@ typedef enum {
 
 ###代理命名
 1. 【强制】代理以delegate后缀结尾，数据源以dataSource后缀结尾，其他视情况而定
-1. 要求写全，最好的例子是UITableView代理
+1. 【强制】要求写全，最好的例子是UITableView代理
 2. 默认为强制实现，如果可以不实现，必须加@optional
 ```objc
 @protocol UITableViewDataSource<NSObject>
