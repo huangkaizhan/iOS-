@@ -30,12 +30,12 @@
 ###快捷注释 : //
     Xcode 默认快捷键为 ： command + /
     
-1. .m 文件中的属性
+1. 【强制】.m 文件中的属性
 ```objc
 // 姓名
 @property (nonatomic, copy) NSString *name;
 ```
-2. .m 文件中的方法
+2. 【强制】.m 文件中的方法
 ```objc
 // 说你好
 -(void)sayHello
