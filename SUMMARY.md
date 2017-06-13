@@ -8,5 +8,5 @@
 * [数组](shu_zu.md)
 * [字典](zi_dian.md)
 * [网络](wang_luo.md)
-* 控制语句
+* [控制语句](kong_zhi_yu_ju.md)
 
