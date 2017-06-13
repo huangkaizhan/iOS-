@@ -40,7 +40,7 @@ SexType_bb type = SexTypeMan;
             NSLog(@"我是不知道我是什么");
             break;
         default:
-            NSAssert(1 == 2, @"看一下是否有问题哦");
+            NSAssert(1 == 2, @"看一下是否有问题哦"); // 视情况而定
             break;
     }
 ```
