@@ -196,12 +196,12 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 相册是否加载成功
 @property (nonatomic, assign, getter=isAlbumLoaded) KVO_bb BOOL albumLoaded;
 ```
-6. 模型数组，最好指定数组元素类型
+6. 【强制】模型数组，最好指定数组元素类型
 ```objc
 // 评论数组,每一个元素都是BBRecordCommentModel类型
 @property (nonatomic, strong) JSON_bb NSMutableArray <BBRecordCommentModel *>*commentArrayM;
 ```
-7. 代码块属性，以Block结尾
+7. 【强制】代码块属性，以Block结尾
 ```objc
 // 预览代码块
 @property (nonatomic, copy) BlockWithTwoObject_bb previewBlock;
