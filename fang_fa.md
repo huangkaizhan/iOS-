@@ -2,7 +2,7 @@
 
 ### UI
 
-1. 初始化UI，建议使用setup前缀或者是prepare前缀，统一
+1. 【建议】初始化UI，建议使用setup前缀或者是prepare前缀，统一
 ```objc
 -(void)setupUI
 {
@@ -22,7 +22,7 @@
         NSLog(@"");
 }
 ```
-2. 上拉使用pullUp，下拉使用pullDown，而不是直接命名功能名
+2. 【建议】上拉使用pullUp，下拉使用pullDown，而不是直接命名功能名
 ```objc
 // 上拉
 -(void)pullUp
@@ -39,9 +39,9 @@
 ```
 
 ###通知
-1. 添加通知使用addNotifications
-2. 移除使用removeNotifications
-3. 通知接收方法以notify前缀开头，有参数，参数名为notify变量
+1. 【强制】添加通知使用addNotifications
+2. 【强制】移除使用removeNotifications
+3. 【强制】通知接收方法以notify前缀开头，有参数，参数名为notify变量
 ```objc
 // 添加通知
 -(void)addNotifications
@@ -61,8 +61,8 @@
 ```
 
 ###数据库
-1. 【建议】数据库工具类以SqliteTool结尾命名，不适用CacheTool后缀
-2. 【建议】方法采用和sql语句一样的命名方法（增删改查建表）
+1. 【强制】数据库工具类以SqliteTool结尾命名，不适用CacheTool后缀
+2. 【强制】方法采用和sql语句一样的命名方法（增删改查建表）
 3. 这里不讨论具体细节，如异步线程等，只提供列子参考
 ```objc
 @interface BBUserSqliteTool : NSObject
@@ -78,7 +78,7 @@
 ```
 
 ###其他
-1. 对象初始化，对象方法使用initWith前缀，类方法使用类名前缀
+1. 【建议】对象初始化，对象方法使用initWith前缀，类方法使用类名前缀
 ```objc
 /**
  根据名称初始化
