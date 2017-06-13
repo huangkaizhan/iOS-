@@ -279,7 +279,7 @@ typedef enum {
 @property(nonatomic, weak) BBAvatarImageView *avatarImageView;
 ```
 
-2. 方法名，也需要加base区分，如果需要强制重写，那么需要再加override
+2. 方法名，也需要加base区分，如果需要强制重写，那么需要加override前缀
  ```objc
 // 正例 ：布局基本UI
 -(void)prepareBaseUI
