@@ -27,16 +27,20 @@
 3. default中如果没有特别的操作，那么建议补上NSAssert断言，比如新增一个枚举类型，需要判断类型做操作，可能会遗漏，这是断言会提醒，当然是debug模式中
 4. 如果case中要做的操作属于一个功能，建议抽取出来（可惜没热修复了）
 ```objc
--(void)getGrilFriendWithHeight:(CGFloat)height weight:(CGFloat)weight
-{
-        if (height < 150) {
-            NSLog(@"太矮了");
-            return;
-        }
-        if (weight > 250) {
-            NSLog(@"太重了");
-            return;
-        }
-        NSLog(@"刚刚好");
-}
+SexType_bb type = SexTypeMan;
+    switch (type) {
+        case SexTypeMan:
+            NSLog(@"我是男人");
+            break;
+        case SexTypeWoman:
+            // 跳舞
+            [self dance];
+            break;
+        case SexTypeUnknow:
+            NSLog(@"我是不知道我是什么");
+            break;
+        default:
+            NSAssert(1 == 2, @"看一下是否有问题哦");
+            break;
+    }
 ```
