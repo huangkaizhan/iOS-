@@ -159,6 +159,9 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
   * BBHomeListTableController -> 首页列表控制器
   * BBHomeListColController -> 首页列表流控制器
 
+###ViewModel命名
+1. 类统一使用ViewModel后缀
+
 
 ###属性命名
 1. 基本属性命名，对齐

@@ -40,8 +40,8 @@
 // 说你好
 -(void)sayHello
 {
-      // 获取名字
-      NSString *name = self.name;
+      // 打印你好 --> 单行注释针对小功能注释
+      NSString *name = self.name; // 要打印的姓名 --> 句尾注释针对变量解释
       NSLog(@"你好！%@", name);
 }
 ```
