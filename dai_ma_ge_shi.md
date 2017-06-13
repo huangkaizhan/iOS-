@@ -101,7 +101,7 @@ NSDictionary *dict = @{@"name" : @"KK", @"height" : @"185"};
 NSArray *array = @[@"1", @"2", @"3"];
 NSMutableArray *arrayM = [NSMutableArray arrayWithObjects:@"1", @"2", @"3", nil];
 ```
-6. 方法，标识符（-\+）和返回值有空格，传参不空格，调用方法需要空格
+6. 【强制】方法，标识符（-\+）和返回值有空格，传参不空格，调用方法需要空格
 ```objc
 // 调用传参不空格
 [self sayWord:@"" toPeople:@"name"];
@@ -118,7 +118,7 @@ UIView *view = [[UIView alloc]init];
 // =号后没空格
 UIView *view1 =[[UIView alloc] init];
 ```
-7. 多个空格，请用tab健对齐
+7. 【推荐】多个空格，请用tab健对齐
 ```objc
 // 添加记录成功
 #define Notify_Record_Add_Successed                 @"Notify_Record_Add_Successed"
