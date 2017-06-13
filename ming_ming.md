@@ -28,7 +28,7 @@ static NSInteger Max_Count = 100;
 // 反例
 static NSString *key_Photo = @"key_Photo";
 ```
-6. 强类型变量，*号统一加载变量名前面，禁止不换行
+6. 【强制】强类型变量，*号统一加载变量名前面，禁止不换行
  ```objc
 // 正例
 NSString *content = @"铲屎君";
@@ -99,7 +99,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 
 
 ###通知命名
-1. 通知名
+1. 【强制】通知名
   * 首字母大写
   * 单词以_分开
   * Notify_ + 模块 + 动作（不是功能） + 其他
@@ -111,7 +111,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 反例，日历隐藏显示通知
 #define Notify_showCalendar                 @"Notify_showCalendar"
 ```
-2. 接收通知方法名
+2. 【强制】接收通知方法名
   * notify开头，注意是小写
   * 最好以通知名延续下来，别写要做的功能名
 ```objc
@@ -160,7 +160,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
   * BBHomeListColController -> 首页列表流控制器
 
 ###ViewModel命名
-1. 类统一使用ViewModel后缀
+1. 【强制】类统一使用ViewModel后缀
 ```objc
 @interface BBBabyAddViewModel : BaseViewModel_lib
 @end
@@ -175,18 +175,18 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 跳舞
 @property (nonatomic, strong) UIButton *danceButton;
 ```
-2. 布局命名 ：后缀需要加上Layout（强制）
+2. 【强制】布局命名 ：后缀需要加上Layout
 ```objc
 // 点赞按钮左边约束
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *likeButtonLeftLayout;
 ```
-3. bool值命名 ：以面向对象思想为标准
+3. 【推荐】bool值命名 ：以面向对象思想为标准
 ```objc
 // 是否选中
 // 获取用is来获取，设置直接设置，符合面向对象思想
 @property (nonatomic, assign, getter=isSelected) BOOL selected;
 ```
-4. 接口返回的JSON数据，模型里属性命名最好加JSON空宏，证明是接口返回
+4. 【推荐】接口返回的JSON数据，模型里属性命名最好加JSON空宏，证明是接口返回
 ```objc
 // 头像
 @property (nonatomic, copy) JSON_bb NSString *avatar;
