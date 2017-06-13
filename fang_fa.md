@@ -64,23 +64,10 @@
 1. 数据库工具类以SqliteTool结尾命名，不适用CacheTool后缀
 2. 方法采用和sql语句一样的命名方法（增删改查建表）
 ```objc
--(void)setupUI
-{
-        // 导航
-        [self setupNavigation];
-        // 头部
-        [self setupHeaderView];
-}
-// 导航
--(void)setupNavigation
-{
-        self.navigationItem.title = @"标题";
-}
-// 头部
--(void)setupHeaderView
-{
-        NSLog(@"");
-}
+@interface BBUserSqliteTool : NSObject
+// 新增用户，不使用add
++(BOOL)insertUser:(id)user;
+@end
 ```
 
 ###其他
