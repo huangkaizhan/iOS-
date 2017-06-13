@@ -191,7 +191,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 // 头像
 @property (nonatomic, copy) JSON_bb NSString *avatar;
 ```
-5. KVO接听的属性，最好加上KVO空宏
+5. 【推荐】KVO接听的属性，最好加上KVO空宏
 ```objc
 // 相册是否加载成功
 @property (nonatomic, assign, getter=isAlbumLoaded) KVO_bb BOOL albumLoaded;
