@@ -106,14 +106,16 @@
 2. 【建议】画图，统一使用draw开头
 3. 跳转控制器，统一使用goTo作为前缀VC做后缀
 ```objc
-@interface BBUserSqliteTool : NSObject
-// 新增用户，不使用add
-+(BOOL)insertUser:(id)user;
-// 删除用户
-+(BOOL)deleteUserWithUid:(NSString *)uid;
-// 修改用户
-+(BOOL)updateUser:(id)user;
-// 查询用户
-+(id)selectUserWithUid:(NSString *)uid;
+#pragma mark - 跳转控制器
+// 跳转到列表控制器
+-(void)goToBabyListVC
+{
+        UIViewController *vc = [[UIViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+}
+// 跳转到跳舞控制器
+-(void)goToDanceVC
+{
+}
 @end
 ```
