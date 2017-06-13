@@ -252,7 +252,7 @@ typedef enum {
 #define RGB_bb(r,g,b)                      [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:1.f]
 ```
 
-2. 密匙定义：以Key_开头
+2. 【强制】密匙定义：以Key_开头
 ```objc
 // 正例 ：跳转本app url schemes
 #define Key_App_Url_Schemes                @"rdf200a0c37c3c3d53"
