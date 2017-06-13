@@ -199,7 +199,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 6. 模型数组，最好指定数组元素类型
 ```objc
 // 评论数组,每一个元素都是BBRecordCommentModel类型
-@property (nonatomic, strong) JSON_bb NSMutableArray <BBRecordCommentModel *>*comments;
+@property (nonatomic, strong) JSON_bb NSMutableArray <BBRecordCommentModel *>*commentArrayM;
 ```
 7. 代码块属性，以Block结尾
 ```objc
