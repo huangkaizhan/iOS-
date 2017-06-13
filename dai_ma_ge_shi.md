@@ -8,7 +8,7 @@
 * 右大括号后还有else等代码则不换行；表示终止的右大括号后必须换行。
 
 
-1. 方法 ： 左右大括号到独占一行（不管是不是系统方法）
+1. 【强制】方法 ： 左右大括号到独占一行（不管是不是系统方法）
 ```objc
 // 跳舞，由于下面void前面打空格会有问题，所以去掉，真实代码比如加上
 -(void)dance
@@ -92,11 +92,11 @@ if (1 == 2) {
 NSString *text = age == 18 ? @"一朵花" : @"一朵花";
 self.view.hidden = self.dataArray.count;
 ```
-4. 字典, 左右大括号不空格，冒号左右空格，逗号后要加空格
+4. 【推荐】字典, 左右大括号不空格，冒号左右空格，逗号后要加空格
 ```objc
 NSDictionary *dict = @{@"name" : @"KK", @"height" : @"185"};
 ```
-5. 数组, 左右中括号不空格，每一元素逗号空格
+5. 【推荐】数组, 左右中括号不空格，每一元素逗号空格
 ```objc
 NSArray *array = @[@"1", @"2", @"3"];
 NSMutableArray *arrayM = [NSMutableArray arrayWithObjects:@"1", @"2", @"3", nil];
