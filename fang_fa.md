@@ -61,8 +61,8 @@
 ```
 
 ###数据库
-1. 数据库工具类以SqliteTool结尾命名，不适用CacheTool后缀
-2. 方法采用和sql语句一样的命名方法（增删改查建表）
+1. 【建议】数据库工具类以SqliteTool结尾命名，不适用CacheTool后缀
+2. 【建议】方法采用和sql语句一样的命名方法（增删改查建表）
 3. 这里不讨论具体细节，如异步线程等，只提供列子参考
 ```objc
 @interface BBUserSqliteTool : NSObject
