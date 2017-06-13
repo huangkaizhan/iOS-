@@ -28,12 +28,13 @@
 ```
 
 ###创建
-1. 统一使用分类方法
+1. 统一使用分类方法，这里不举太多例子
 ```objc
 -(void)testDictionary
 {
         // 反例
         // NSDictionary *failedDict = [NSDictionary dictionaryWithObject:nil forKey:@"name"];
+        // 正例
         NSDictionary *dict = [NSDictionary dictionaryWithObjectSafe:nil forKey:@"name"];
 }
 ```
