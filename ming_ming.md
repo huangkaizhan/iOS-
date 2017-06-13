@@ -178,7 +178,7 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 2. 布局命名 ：后缀需要加上Layout（强制）
 ```objc
 // 点赞按钮左边约束
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *likeButtonLeftLayout;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *likeButtonLeftLayout;
 ```
 3. bool值命名 ：以面向对象思想为标准
 ```objc
