@@ -167,8 +167,8 @@ BBFirstTimeListColCell *cell = [[BBFirstTimeListColCell alloc] init];
 ```
 
 ###属性命名
-1. 基本属性命名，对齐
-2. 强类型的，*号跟在变量名前
+1. 【强制】基本属性命名，对齐
+2. 【强制】强类型的，*号跟在变量名前
 ```objc
 // 总数
 @property (nonatomic, assign) NSInteger allCount;
